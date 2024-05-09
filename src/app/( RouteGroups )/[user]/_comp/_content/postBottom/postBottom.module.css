@@ -1,0 +1,76 @@
+.button_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.button_flex button{
+    flex-grow: 1;
+    padding: 10px;
+    gap: 15px;
+    color: var(--light_shed_text);
+    transition: all 0.3s;
+}
+
+.button_flex::before, .button_flex::after{
+    content: "";
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.button_flex::before{
+    top: -5px;
+    border-top: 0.5px solid var(--bg_light_shed);
+}
+
+.button_flex::after{
+    bottom: -5px;
+    border-bottom: 0.5px solid var(--bg_light_shed);
+}
+
+.like_wrapper{
+    background: red;
+
+}
+
+
+.likeShow {
+    position: absolute;
+    padding: 5px;
+    background: var(--bg_light_green--hover);
+    top: -130%;
+    left: 0;
+    transition: all 0.3s;
+    transform: translateY(50%);
+    display: flex;
+    gap: 5px;
+    border-radius: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.likeShow:hover {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+
+}
+
+
+.likeShow button{
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+
+.button_flex button:nth-child(1):hover + .likeShow {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition-delay: 0s;  /* Remove delay */
+}

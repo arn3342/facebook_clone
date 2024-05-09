@@ -1,0 +1,55 @@
+.main_btn{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    column-gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+    font-family: SFPro, -apple-system, Helvetica, serif;
+}
+
+.primary_btn{
+    background: var(--new_btn_blue);
+}
+
+.primary_btn:hover{
+    filter: brightness(130%) contrast(100%);
+}
+
+.second_btn{
+    background: var(--bg_light_shed);
+}
+
+.second_btn:hover{
+    filter: brightness(130%) contrast(100%);
+}
+
+.btn_link{
+    background: var(--bg_dark_main);
+    padding: 17px 15px;
+}
+
+.btn_link:hover{
+    background: var(--bg_light_shed);
+}
+
+button.btn_link_active{
+    color: var(--new_btn_blue);
+    position: relative;
+}
+
+.btn_link_active::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 4px solid var(--new_btn_blue);
+    bottom: -4px;
+}

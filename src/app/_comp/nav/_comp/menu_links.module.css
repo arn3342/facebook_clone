@@ -1,0 +1,29 @@
+.menu_links{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.menu_icons{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    position: relative;
+    background: var(--bg_light_shed);
+    color: #e5e5e5;
+    transition: all 0.2s;
+}
+
+.menu_icons:hover{
+    background: var(--color_main_blue);
+}
+
+
+.active_menu{
+    background: var(--color_main_blue);
+}

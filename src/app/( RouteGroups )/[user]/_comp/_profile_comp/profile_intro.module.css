@@ -1,0 +1,43 @@
+.intro_container{
+    background: var(--bg_dark_main);
+    border-radius: 5px;
+}
+
+.intro_flex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+
+.profile_side_bar{
+
+}
+
+.sub_title{
+    font-size: 18px;
+    text-align: center;
+    color: var(--bg_light_blue);
+    letter-spacing: 1px;
+}
+
+.bio_links{
+    display: flex;
+    column-gap: 10px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+}
+
+.bio_link{
+    color: var(--bg_light_blue);
+}
+
+.bio_link:hover{
+    text-decoration: underline;
+}
+
+.bio_web_link{
+    color: var(--new_btn_blue);
+}

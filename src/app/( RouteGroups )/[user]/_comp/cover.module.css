@@ -1,0 +1,19 @@
+.image_container{
+    height: 420px;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 15px 50px -20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 650px) {
+    .image_container{
+        height: 300px;
+    }
+}
+
+.cover_img{
+    user-select: none;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}

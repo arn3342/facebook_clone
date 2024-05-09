@@ -1,0 +1,64 @@
+.title_flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.profile_img img{
+    width: 45px;
+    height: auto;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.profile_img{
+    position: relative;
+}
+
+.profile_img::after{
+    content: "";
+    font-size: 30px;
+    bottom: 7px;
+    height: 13px;
+    width: 13px;
+    border: 2px solid var(--bg_dark_main);
+    border-radius: 100%;
+    right: -3px;
+    position: absolute;
+    background: green;
+}
+
+
+.active_link::after{
+
+}
+
+
+.title_info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.title_info .name{
+    font-size: 17px;
+    color: var(--bg_light_blue);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.title_info .name:hover{
+    text-decoration: underline;
+}
+
+.title_info span{
+    font-size: 13px;
+}

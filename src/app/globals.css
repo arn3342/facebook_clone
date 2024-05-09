@@ -1,0 +1,97 @@
+@import "iconview/style.css";
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.4px;
+}
+
+
+li { list-style-type: none; }
+img { width: 100%; }
+
+a { text-decoration: none }
+
+:link, :visited{
+    color: var(--color_main_blue);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    font-family: var(--regular);
+
+    --regular: var(--regular);
+    --medium: var(--medium);
+    --semi_bold: var(--semi_bold);
+    --bold: var(--bold);
+
+    --section_pad: 0 20px;
+
+    --color_main_blue: #1877f2;
+    --new_btn_blue: #1366ff;
+    --bg_light_blue: #f0f2f5;
+    --color_main_blue-hover: #3089ff;
+    --bg_dark_main : #242526;
+    --bg_navbar: #242526;
+    --bg_black: #18191a;
+
+    --bg_light_shed: #3a3b3c;
+    --light_shed_text: #b0b3b8;
+
+    --bg_light_green: #42b72a;
+    --bg_light_green--hover: #39a220;
+}
+
+h3{
+    font-family: var(--regular), -apple-system, Helvetica, serif;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h4{
+    font-family: var(--regular), -apple-system, Helvetica, serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button{
+    outline: none;
+}
+
+input{
+    font-size: 17px;
+}
+
+hr{
+    border: 1px solid var(--bg_light_shed);
+    border-radius: 5px;
+}
+
+.main_logo{
+    cursor: pointer;
+}
+
+.mini_title{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 440px) {
+    .main_body_container > * {
+        transform: scale(0.6) !important;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
